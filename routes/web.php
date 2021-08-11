@@ -118,9 +118,7 @@ Route::group(['middleware' => ['auth', 'role:creator-survey']], function() {
 Route::group(['middleware' => ['auth', 'role:report-survey']], function() {
     Route::get('dsb/reports/profile', [dsbReportController::class, 'profile'])->name('dsb/reports/profile');
     Route::get('dsb/reports/settings', [dsbReportController::class, 'settings'])->name('dsb/reports/settings');
-    Route::get('dsb/reports/request', [dsbReportController::class, 'request'])->name('dsb/reports/request');
-    Route::get('dsb/reports/builder', [dsbReportController::class, 'builder'])->name('dsb/reports/builder');
-    Route::get('dsb/reports/surveylist', [dsbReportController::class, 'surveylist'])->name('dsb/reports/surveylist');
+    Route::get('dsb/reports/reports', [dsbReportController::class, 'reports'])->name('dsb/reports/reports');
     
 });
 

@@ -58,47 +58,17 @@ ACDIMPC DSB
             <span class="sidebar-normal"> Monitoring </span>
           </a>
         </li>
-        <li class="nav-item {{ $title == 'Request' ? ' active' : '' }}">
-          <a class="nav-link" href="{{route('dsb/reports/request')}}">
+        <li class="nav-item {{ $title == 'Report Generator' ? ' active' : '' }}">
+          <a class="nav-link" href="{{route('dsb/reports/reports')}}">
             <span class="sidebar-mini"><i class="material-icons">
               approval
             </i></span>
-            <span class="sidebar-normal"> Request </span>
+            <span class="sidebar-normal"> Report Generator </span>
           </a>
         </li>
       </ul>
     </div>
   </li>
-
-  <li class="nav-item {{ $activeparents == 'User' ? ' active' : '' }} user">
-  <a class="nav-link" data-toggle="collapse" href="#formsExamples">
-    <i class="material-icons">poll</i>
-    <p> Survey
-      <b class="caret"></b>
-    </p>
-  </a>
-  <div class="collapse {{ $activeparents == 'User' ? ' show' : '' }}" id="formsExamples">
-    <ul class="nav">
-        <li class="nav-item {{ $title == 'Survey Builder' ? ' active' : '' }}">
-        <a class="nav-link" href="{{route('dsb/reports/builder')}}">
-            <span class="sidebar-mini"><i class="material-icons">
-              post_add
-            </i></span>
-          <span class="sidebar-normal"> Creator/Builder </span>
-        </a>
-      </li>
-      <li class="nav-item {{ $title == 'Survey List' ? ' active' : '' }}">
-        <a class="nav-link" href="{{route('dsb/reports/surveylist')}}">
-            <span class="sidebar-mini"><i class="material-icons">
-              checklist
-             </i></span>
-          <span class="sidebar-normal"> Survey List </span>
-        </a>
-      </li>  
-    </ul>
-  </div>
-  </li>
-
 </ul>
 </div>
 

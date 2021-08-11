@@ -17,12 +17,7 @@ class dsbReportController extends Controller
     public function request(){
         return view('dsb.reports.request',['title' => 'Request', 'activeparents' => 'Dashboard']);
     }
-
-    // Survey nav
-    public function builder(){
-        return view('dsb.reports.builder',['title' => 'Survey Builder', 'activeparents' => 'User']);
-    }
-    public function surveylist(){
-        return view('dsb.reports.surveylist',['title' => 'Survey List', 'activeparents' => 'User']);
+    public function reports(){
+        return view('dsb.reports.reports',['title' => 'Report Generator', 'activeparents' => 'Dashboard']);
     }
 }
